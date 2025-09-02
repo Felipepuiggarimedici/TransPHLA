@@ -1,6 +1,6 @@
 # TransPHLA - A Transformer-based classifier for peptide-MHC binding prediction
 
-This repository contains the code for my **MSc thesis**, which applies a **language learning model** to the challenging task of antigen presentation prediction. I conducted research on **peptide-HLA binding prediction** using a **transformer-based bidirectional language learning model** to classify binders and non-binders. My work also involved exploring **generative models** to design new artificial peptides with high predicted binding affinity.
+This repository contains the code for my **MSc thesis**, which applies a **language learning model** to the challenging task of antigen presentation prediction. I conducted research on **peptide-HLA binding prediction** using a **transformer-based language learning model** to classify binders and non-binders. My work also involved exploring **generative models** to design new artificial peptides with high predicted binding affinity.
 
 As part of this research, I performed extensive **hyperparameter tuning**, **attention analysis**, and **structure analysis** via clustering. I also used entropy-based diversity metrics to evaluate the generative model's output. All memory-intensive deep learning experiments were run in a **Linux HPC (High Performance Computing) environment**, requiring me to manage jobs across multiple nodes. The key technologies used in this project include **Python, PyTorch, NumPy, Matplotlib, scikit-learn, and the Hugging Face library**, important tools in **data science and statistics**.
 
@@ -158,3 +158,6 @@ The results of the hyperparameter sweeps are organized into dedicated folders fo
 [4] Leem, J., et al. (2022). Deciphering the language of antibodies using self-supervised learning. *Patterns*, *3*(7), 100513. doi: 10.1016/j.patter.2022.100513.
 
 [5] Malamoud, O. (2024). *Interpretability strategies for machine learning language models on antibodies sequences*. Imperial College London.
+
+## Contact
+felipepuiggarimedici@gmail.com https://www.linkedin.com/in/felipe-puiggari-medici-248855207/
