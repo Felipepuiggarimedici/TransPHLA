@@ -1,0 +1,4 @@
+data/
+importantScriptsForMakingData/
+evalsHyperparams/
+generatePeptideMutations.py
