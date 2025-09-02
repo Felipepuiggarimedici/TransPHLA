@@ -132,7 +132,6 @@ project_root/
 ├── model/                      # saved models and checkpoints
 ├── modelsHyperparams/          # saved models from hyperparameter runs
 ├── evals/                      # evaluation outputs (ROC, PR, CSVs)
-├── scripts/
 ├── train.py                # single-run training script (TransPHLA)
 ├── eval.py                 # evaluation script (saves to evals/default/)
 ├── evalByLength.py  # evaluation by peptide length (saves to evals/evalByLength/)
