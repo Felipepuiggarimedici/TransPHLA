@@ -128,20 +128,19 @@ The results of the hyperparameter sweeps are organized into dedicated folders fo
 ```
 project_root/
 ├── tokenizer/                  # vocab.json and tokenizer utilities
-├── data/                       # processed CSVs (trainData, testData)
+├── data/              # processed CSVs (trainData, testData). Not in github
 ├── model/                      # saved models and checkpoints
 ├── modelsHyperparams/          # saved models from hyperparameter runs
 ├── evals/                      # evaluation outputs (ROC, PR, CSVs)
 ├── scripts/
-│   ├── train.py                # single-run training script (TransPHLA)
-│   ├── eval.py                 # evaluation script (saves to evals/default/)
-│   ├── evalByLength.py         # evaluation by peptide length (saves to evals/evalByLength/)
-│   ├── runHyperParametricSearch.py  # orchestrates HPC hyperparam sweep
-│   ├── run5Fold.py             # performs one hyperparam job: 5-fold CV
-│   └── generate_roberta.py     # Gibbs sampling utilities for RoBERTa
-├── notebooks/
-│   ├── clustersUMAP.ipynb      # embedding visualizations
-│   └── hyperparametricAnalysis.ipynb
+├── train.py                # single-run training script (TransPHLA)
+├── eval.py                 # evaluation script (saves to evals/default/)
+├── evalByLength.py  # evaluation by peptide length (saves to evals/evalByLength/)
+├── runHyperParametricSearch.py  # orchestrates HPC hyperparam sweep
+├── run5Fold.py             # performs one hyperparam job: 5-fold CV
+├── clustersUMAP.ipynb      # embedding visualizations
+├── clusterstSNE.ipynb # embedding visualizations with t-SNE for experiment
+├── hyperparametricAnalysis.ipynb
 ├── modelAndPerformances.py     # model classes, train/eval utility functions
 ├── lossAnalysis.py
 ├── requirements.txt
