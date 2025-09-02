@@ -125,27 +125,28 @@ The results of the hyperparameter sweeps are organized into dedicated folders fo
 
 (Include exact package versions in a `requirements.txt` or `environment.yml` for reproducibility.)
 
----
-├── tokenizer/ # vocab.json and tokenizer utilities
-├── data/ # processed CSVs (trainData, testData)
-├── model/ # saved models and checkpoints
-├── modelsHyperparams/ # saved models from hyperparameter runs
-├── evals/ # evaluation outputs (ROC, PR, CSVs)
+```
+project_root/
+├── tokenizer/                  # vocab.json and tokenizer utilities
+├── data/                       # processed CSVs (trainData, testData)
+├── model/                      # saved models and checkpoints
+├── modelsHyperparams/          # saved models from hyperparameter runs
+├── evals/                      # evaluation outputs (ROC, PR, CSVs)
 ├── scripts/
-│ ├── train.py # single-run training script (TransPHLA)
-│ ├── eval.py # evaluation script (saves to evals/default/)
-│ ├── evalByLength.py # evaluation by peptide length (saves to evals/evalByLength/)
-│ ├── runHyperParametricSearch.py # orchestrates HPC hyperparam sweep
-│ ├── run5Fold.py # performs one hyperparam job: 5-fold CV
-│ └── generate_roberta.py # Gibbs sampling utilities for RoBERTa
+│   ├── train.py                # single-run training script (TransPHLA)
+│   ├── eval.py                 # evaluation script (saves to evals/default/)
+│   ├── evalByLength.py         # evaluation by peptide length (saves to evals/evalByLength/)
+│   ├── runHyperParametricSearch.py  # orchestrates HPC hyperparam sweep
+│   ├── run5Fold.py             # performs one hyperparam job: 5-fold CV
+│   └── generate_roberta.py     # Gibbs sampling utilities for RoBERTa
 ├── notebooks/
-│ ├── clustersUMAP.ipynb # embedding visualizations
-│ └── hyperparametricAnalysis.ipynb
-├── modelAndPerformances.py # model classes, train/eval utility functions
+│   ├── clustersUMAP.ipynb      # embedding visualizations
+│   └── hyperparametricAnalysis.ipynb
+├── modelAndPerformances.py     # model classes, train/eval utility functions
 ├── lossAnalysis.py
 ├── requirements.txt
 └── README.md
----
+```
 
 ## References
 
