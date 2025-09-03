@@ -145,6 +145,35 @@ project_root/
 ├── requirements.txt
 └── README.md
 ```
+## Reproducibility
+
+To ensure reproducibility of results and avoid common pitfalls with model checkpoints:
+
+**Model Saving and Loading**  
+Models in this repository are saved as **state_dicts** using:
+```python
+torch.save(model.state_dict(), "best_model.pt")
+```
+To reload, first instantiate the architecture, then load the weights:
+```python
+model = Transformer(d_model, d_k, n_layers, n_heads, d_ff, dropout=dropout)
+state_dict = torch.load("best_model.pt", map_location=device)
+model.load_state_dict(state_dict)
+model.to(device)
+model.eval()
+```
+⚠️ Do not overwrite the model instance with the `OrderedDict`, or you will lose access to methods like `.eval()`.
+
+**Git LFS and Checkpoints**  
+Large model checkpoints are tracked using **Git LFS**.  
+After cloning the repository, run:
+```bash
+git lfs install
+git lfs pull
+```
+to download the actual model binaries. If you only see a small text file beginning with `version https://git-lfs.github.com/spec/v1`, you are looking at an LFS pointer, not the checkpoint itself.
+
+By following these steps, anyone should be able to reproduce the training, evaluation, and analysis pipelines in this repository.
 
 ## References
 
